@@ -5,8 +5,6 @@ from flask import redirect, request, flash, session
 
 app = Flask(__name__)
 
-app.secret_key = os.environ["SECRET_KEY"]
-
 
 @app.route("/")
 def homepage():
